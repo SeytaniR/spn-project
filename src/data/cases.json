@@ -2,6 +2,7 @@
   {
     "id": "case_001",
     "title": "Uivos em Wisconsin",
+    "image": "/images/cases/wisconsin.png",
     "location": "Madison, WI",
     "timeLimit": 5,
     "investigationPoints": 10,
@@ -18,6 +19,7 @@
   {
     "id": "case_002",
     "title": "Negócio Arriscado",
+    "image": "/images/cases/reno.png",
     "location": "Reno, NV",
     "timeLimit": 7,
     "investigationPoints": 10,

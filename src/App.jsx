@@ -1,40 +1,49 @@
-import { useTranslation } from 'react-i18next'
-import './App.css'
-import characters from './data/characters.json'
+import React from 'react';
+import { useTranslation } from 'react-i18next';
+import { useGameStore } from './store/useGameStore';
+import { MainMenuScreen } from './screens/MainMenuScreen';
+import { BaseScreen } from './screens/BaseScreen';
+import { MapScreen } from './screens/MapScreen';
+import { InvestigationScreen } from './screens/InvestigationScreen';
+import { CombatScreen } from './screens/CombatScreen';
+
+import './App.css';
 
 function App() {
-  const { t, i18n } = useTranslation()
+  const { i18n } = useTranslation();
+  const currentScreen = useGameStore(state => state.currentScreen);
 
   const toggleLanguage = () => {
-    i18n.changeLanguage(i18n.language === 'pt' ? 'en' : 'pt')
-  }
+    i18n.changeLanguage(i18n.language === 'pt' ? 'en' : 'pt');
+  };
+
+  const renderScreen = () => {
+    switch (currentScreen) {
+      case 'MAIN_MENU':
+        return <MainMenuScreen />;
+      case 'BASE':
+        return <BaseScreen />;
+      case 'MAP':
+        return <MapScreen />;
+      case 'INVESTIGATION':
+        return <InvestigationScreen />;
+      case 'COMBAT':
+        return <CombatScreen />;
+      default:
+        return <MainMenuScreen />;
+    }
+  };
 
   return (
-    <div className="container">
-      <header style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
-        <h1>Supernatural Orphanage</h1>
-        <button onClick={toggleLanguage} style={{ padding: '2%', background: 'transparent', color: '#c5a059', border: '1px solid #c5a059' }}>
+    <>
+      <div style={{ position: 'absolute', top: 10, right: 10, zIndex: 100 }}>
+        <button onClick={toggleLanguage} style={{ padding: '8px', background: 'transparent', color: '#c5a059', border: '1px solid #c5a059', cursor: 'pointer', borderRadius: '4px' }}>
           {i18n.language.toUpperCase()}
         </button>
-      </header>
-
-      <section className="card">
-        <h2>{t('UI.ROSTER')}</h2>
-        <ul style={{ listStyleType: 'none', marginTop: '2vh' }}>
-          {characters.map(char => (
-            <li key={char.id} style={{ marginBottom: '1vh', borderBottom: '1px dotted #333', paddingBottom: '1vh' }}>
-              <strong>{char.name}</strong> <br/>
-              <small>{t('UI.ENGAGEMENT')}: {char.engagement}% | {t('UI.HP')}: {char.stats.hp.current}/{char.stats.hp.max}</small>
-            </li>
-          ))}
-        </ul>
-      </section>
-
-      <button style={{ padding: '5%', marginTop: 'auto', background: '#8b0000', color: 'white', border: 'none', borderRadius: '4px', fontSize: '1.2rem', fontWeight: 'bold' }}>
-        {t('UI.START_GAME')}
-      </button>
-    </div>
-  )
+      </div>
+      {renderScreen()}
+    </>
+  );
 }
 
-export default App
+export default App;

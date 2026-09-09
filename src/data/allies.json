@@ -2,6 +2,7 @@
   {
     "id": "ally_bobby",
     "name": "Bobby Singer",
+    "image": "/images/allies/bobby.png",
     "role": "LORE_EXPERT",
     "bondLevel": 60,
     "abilities": [
@@ -22,6 +23,7 @@
   {
     "id": "ally_castiel",
     "name": "Castiel",
+    "image": "/images/allies/castiel.png",
     "role": "ANGEL_WARRIOR",
     "bondLevel": 30,
     "abilities": [

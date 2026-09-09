@@ -2,6 +2,7 @@
   {
     "id": "char_01",
     "name": "Liam 'O Novato'",
+    "image": "/images/characters/liam.png",
     "status": "IDLE",
     "engagement": 85,
     "stats": {
@@ -24,6 +25,7 @@
   {
     "id": "char_02",
     "name": "Maya 'A Vidente'",
+    "image": "/images/characters/maya.png",
     "status": "IDLE",
     "engagement": 95,
     "stats": {

@@ -2,6 +2,7 @@
   {
     "id": "mon_werewolf",
     "name": "Lobisomem",
+    "image": "/images/monsters/werewolf.png",
     "tier": "COMMON",
     "killCountForSpawn": 0,
     "stats": {
@@ -19,6 +20,7 @@
   {
     "id": "mon_werewolf_alpha",
     "name": "Lobisomem Alfa",
+    "image": "/images/monsters/werewolf_alpha.png",
     "tier": "ALPHA",
     "killCountForSpawn": 20,
     "stats": {
@@ -36,6 +38,7 @@
   {
     "id": "mon_demon_crossroads",
     "name": "Demônio da Encruzilhada",
+    "image": "/images/monsters/crossroads_demon.png",
     "tier": "BOSS",
     "killCountForSpawn": 0,
     "stats": {

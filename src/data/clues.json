@@ -1,6 +1,7 @@
 [
   {
     "id": "clue_missing_hearts",
+    "image": "/images/clues/missing_heart.png",
     "textKey": "CLUE.MISSING_HEARTS",
     "requiredAttribute": "deduction",
     "difficulty": 30,
@@ -8,6 +9,7 @@
   },
   {
     "id": "clue_lunar_cycle",
+    "image": "/images/clues/lunar_cycle.png",
     "textKey": "CLUE.LUNAR_CYCLE",
     "requiredAttribute": "knowledge",
     "difficulty": 10,
@@ -15,6 +17,7 @@
   },
   {
     "id": "clue_sulfur",
+    "image": "/images/clues/sulfur.png",
     "textKey": "CLUE.SULFUR",
     "requiredAttribute": "mediumship",
     "difficulty": 20,
@@ -22,6 +25,7 @@
   },
   {
     "id": "clue_claw_marks",
+    "image": "/images/clues/claw_marks.png",
     "textKey": "CLUE.CLAW_MARKS",
     "requiredAttribute": "intelligence",
     "difficulty": 10,

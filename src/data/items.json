@@ -2,6 +2,7 @@
   {
     "id": "wpn_colt",
     "name": "O Colt",
+    "image": "/images/items/colt.png",
     "type": "WEAPON",
     "description": "Mata quase qualquer coisa. Munição extremamente rara.",
     "damageBase": 999,
@@ -14,6 +15,7 @@
   {
     "id": "wpn_shotgun",
     "name": "Escopeta de Cano Serrado",
+    "image": "/images/items/shotgun.png",
     "type": "WEAPON",
     "description": "Arma de fogo padrão para caçadores.",
     "damageBase": 8,
@@ -24,6 +26,7 @@
   {
     "id": "wpn_revolver",
     "name": "Revólver .38",
+    "image": "/images/items/revolver.png",
     "type": "WEAPON",
     "description": "Confiável e fácil de carregar.",
     "damageBase": 5,
@@ -34,6 +37,7 @@
   {
     "id": "kit_silver_bullets",
     "name": "Balas de Prata",
+    "image": "/images/items/silver_bullets.png",
     "type": "KIT",
     "description": "Projéteis banhados em prata. Essencial contra metamorfos e lobisomens.",
     "tags": ["silver"],
@@ -44,6 +48,7 @@
   {
     "id": "kit_holy_water",
     "name": "Água Benta",
+    "image": "/images/items/holy_water.png",
     "type": "KIT",
     "description": "Queima demônios como ácido.",
     "tags": ["holy", "water"],
@@ -54,6 +59,7 @@
   {
     "id": "rel_anti_possession_tattoo",
     "name": "Tatuagem Anti-Possessão",
+    "image": "/images/items/tattoo.png",
     "type": "RELIC",
     "description": "Impede possessão demoníaca no usuário.",
     "tags": ["warding", "passive"],
@@ -64,6 +70,7 @@
   {
     "id": "rel_rabbits_foot",
     "name": "Pé de Coelho",
+    "image": "/images/items/rabbits_foot.png",
     "type": "RELIC",
     "description": "Garante sorte suprema, mas ai de você se perdê-lo.",
     "tags": ["cursed", "luck"],

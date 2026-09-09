@@ -2,6 +2,7 @@
   {
     "id": "trait_demon_blood",
     "name": "Vício em Sangue de Demônio",
+    "image": "/images/traits/demon_blood.png",
     "type": "SUPERNATURAL",
     "description": "Ganha poderes telecinéticos, mas entra em abstinência se não consumir.",
     "effects": [
@@ -20,6 +21,7 @@
   {
     "id": "scar_shattered_knee",
     "name": "Joelho Estilhaçado",
+    "image": "/images/traits/shattered_knee.png",
     "type": "SCAR",
     "description": "Uma ferida grave mal curada que limita os movimentos.",
     "effects": [
