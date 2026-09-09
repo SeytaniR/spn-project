@@ -10,8 +10,8 @@ export function BaseScreen() {
   return (
     <div className="container" style={{ flex: 1, overflowY: 'auto' }}>
       <header className="card" style={{ marginBottom: '2vh', background: 'var(--accent-red)', color: 'white', borderColor: 'var(--accent-red)' }}>
-        <h2>Orfanato (Base)</h2>
-        <p>Turno: {turn} | {t('UI.FAMILY_BUSINESS')}: {familyBusiness}%</p>
+        <h2>{t('UI.ROSTER')} (Base)</h2>
+        <p>{t('UI.TURN')}: {turn} | {t('UI.FAMILY_BUSINESS')}: {familyBusiness}%</p>
       </header>
 
       <section className="card">
@@ -25,7 +25,7 @@ export function BaseScreen() {
                   src={char.image || 'https://via.placeholder.com/80?text=IMG'} 
                   alt={char.name} 
                   onError={(e) => { e.target.src = 'https://via.placeholder.com/80?text=IMG' }}
-                  style={{ width: '80px', height: '80px', borderRadius: '4px', objectFit: 'cover' }} 
+                  style={{ width: '20vw', maxWidth: '80px', height: '20vw', maxHeight: '80px', borderRadius: '4px', objectFit: 'cover' }} 
                 />
                 
                 <div style={{ flex: 1 }}>
@@ -33,8 +33,8 @@ export function BaseScreen() {
                   <small>{t('UI.ENGAGEMENT')}: {char.engagement}% | {t('UI.HP')}: {char.stats.hp.current}/{char.stats.hp.max}</small>
                   
                   <div style={{ marginTop: '1vh', fontSize: '0.85rem', color: '#888' }}>
-                    Arma: {hydrated.equipped.weapon ? hydrated.equipped.weapon.name : 'Nenhuma'} <br/>
-                    Kit: {hydrated.equipped.kit ? hydrated.equipped.kit.name : 'Nenhum'}
+                    {t('UI.WEAPON')}: {hydrated.equipped.weapon ? hydrated.equipped.weapon.name : t('UI.NONE')} <br/>
+                    {t('UI.KIT')}: {hydrated.equipped.kit ? hydrated.equipped.kit.name : t('UI.NONE')}
                   </div>
                 </div>
               </li>
@@ -46,7 +46,7 @@ export function BaseScreen() {
       <button 
         onClick={() => setScreen('MAP')}
         style={{ padding: '5%', background: 'transparent', color: 'var(--text-light)', border: '1px solid var(--accent-gold)', borderRadius: '4px', fontSize: '1.2rem', fontWeight: 'bold', marginTop: 'auto', cursor: 'pointer' }}>
-        Ir para o Mapa &rarr;
+        {t('UI.GO_TO_MAP')}
       </button>
     </div>
   );
