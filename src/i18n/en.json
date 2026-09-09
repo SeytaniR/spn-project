@@ -10,6 +10,7 @@
     "TURN": "Turn",
     "WEAPON": "Weapon",
     "KIT": "Kit",
+    "RELIC": "Relic",
     "NONE": "None",
     "GO_TO_MAP": "Go to Map \u2192",
     "BACK_TO_BASE": "\u2190 Back to Base",
@@ -31,13 +32,31 @@
     "BATTLE_LOG": "Battle Log",
     "VICTORY": "VICTORY!",
     "MONSTER_DESTROYED": "The monster has been destroyed.",
-    "RETURN_BASE": "Return to Base"
+    "RETURN_BASE": "Return to Base",
+    "EQUIP": "Equip",
+    "UNEQUIP": "Unequip",
+    "CHANGE_EQUIPMENT": "Change Equipment",
+    "SELECT_APPROACH": "Select Approach",
+    "APPROACH_CALM": "Calm (10 AP) - Slower, more victims",
+    "APPROACH_FAST": "Fast (5 AP) - Moderate",
+    "APPROACH_DIRECT": "Direct Combat (0 AP) - High risk",
+    "GAME_OVER": "GAME OVER",
+    "ORPHANAGE_EMPTY": "All orphans have perished or deserted.",
+    "MEMBER_DESERTED": "A member deserted due to low Family Business!",
+    "MEMBER_RECRUITED": "A former member returned to the cause!",
+    "ALLY_REQUEST": "Ally Request",
+    "ACCEPT": "Accept",
+    "DECLINE": "Decline",
+    "SEALS": "Seals Protected"
   },
   "CLUE": {
     "MISSING_HEARTS": "The victim's heart is missing.",
     "LUNAR_CYCLE": "Attacks peak during the full moon.",
     "SULFUR": "There is a strong smell of sulfur in the air.",
-    "CLAW_MARKS": "Deep claw marks on the walls."
+    "CLAW_MARKS": "Deep claw marks on the walls.",
+    "ALPHA_PRESENCE": "The regular monsters seem coordinated by an Alpha.",
+    "BURIED_BOX": "Found a buried box with bones and graveyard dirt at a crossroads.",
+    "RED_EYES": "Witnesses reported seeing glowing red eyes."
   },
   "ATTRIBUTES": {
     "strength": "Strength",

@@ -51,8 +51,7 @@ class Database {
   }
 
   // Popula um Caso com o monstro associado e as pistas completas
-  getHydratedCase(caseId) {
-    const cse = this.findById('cases', caseId);
+  getHydratedCase(cse) {
     if (!cse) return null;
 
     const hydratedCase = { ...cse };

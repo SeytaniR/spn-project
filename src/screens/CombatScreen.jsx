@@ -6,19 +6,40 @@ import GameEngine from '../core/GameEngine';
 
 export function CombatScreen() {
   const { t } = useTranslation();
-  const { activeCaseId, roster, setScreen, endTurn, updateFamilyBusiness } = useGameStore();
+  const { activeCaseId, activeMapCases, roster, setScreen, endTurn, updateFamilyBusiness } = useGameStore();
   
-  const hydratedCase = db.getHydratedCase(activeCaseId);
-  const targetMonster = hydratedCase.targetMonster;
+  const rawCase = activeMapCases.find(c => c.id === activeCaseId);
+  const hydratedCase = db.getHydratedCase(rawCase);
+  const targetMonster = hydratedCase ? hydratedCase.targetMonster : null;
   
-  const [monsterHp, setMonsterHp] = useState(targetMonster.stats.hp);
+  const [monsterHp, setMonsterHp] = useState(targetMonster ? targetMonster.stats.hp : 0);
   const [logs, setLogs] = useState([`Um ${targetMonster.name} apareceu!`]);
 
   const handleAttack = (character) => {
+    // Personagem ataca monstro
     const result = GameEngine.resolveAttack(character, targetMonster);
+    const newMonsterHp = Math.max(0, monsterHp - result.damageDealt);
+    setMonsterHp(newMonsterHp);
     
-    setMonsterHp(prev => Math.max(0, prev - result.damageDealt));
-    setLogs([...result.logs, ...logs]);
+    let currentLogs = [...result.logs, ...logs];
+
+    if (newMonsterHp > 0) {
+      // Monstro ataca de volta um alvo aleatório
+      const targetChar = roster[Math.floor(Math.random() * roster.length)];
+      const mDmg = Math.max(1, targetMonster.stats.damage - Math.floor(targetChar.attributes.dexterity / 2));
+      
+      useGameStore.getState().updateCharacterStats(targetChar.id, {
+        hp: { ...targetChar.stats.hp, current: Math.max(0, targetChar.stats.hp.current - mDmg) }
+      });
+      currentLogs = [`${targetMonster.name} atacou ${targetChar.name} causando ${mDmg} de dano!`, ...currentLogs];
+      
+      if (targetChar.stats.hp.current - mDmg <= 0) {
+        useGameStore.getState().killCharacter(targetChar.id);
+        currentLogs = [`[MORTE] ${targetChar.name} foi morto em combate!`, ...currentLogs];
+      }
+    }
+    
+    setLogs(currentLogs);
   };
 
   const handleFlee = () => {
@@ -29,6 +50,7 @@ export function CombatScreen() {
 
   const handleVictory = () => {
     updateFamilyBusiness(hydratedCase.rewards.reputation);
+    useGameStore.getState().registerMonsterKill(targetMonster.id.replace('_alpha', '')); // Registra morte para gerar alfa
     endTurn(); // Victory finishes the hunt -> 1 turn passes
     setScreen('BASE');
   };

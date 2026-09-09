@@ -6,11 +6,12 @@ import GameEngine from '../core/GameEngine';
 
 export function InvestigationScreen() {
   const { t } = useTranslation();
-  const { activeCaseId, setScreen, roster } = useGameStore();
-  const hydratedCase = db.getHydratedCase(activeCaseId);
-  const targetMonster = hydratedCase.targetMonster;
+  const { activeCaseId, activeMapCases, setScreen, roster } = useGameStore();
+  const rawCase = activeMapCases.find(c => c.id === activeCaseId);
+  const hydratedCase = db.getHydratedCase(rawCase);
+  const targetMonster = hydratedCase ? hydratedCase.targetMonster : null;
 
-  const [ap, setAp] = useState(hydratedCase.investigationPoints);
+  const [ap, setAp] = useState(useGameStore.getState().activeCaseAp || hydratedCase?.investigationPoints || 0);
   const [logs, setLogs] = useState([]);
   const [cluesFound, setCluesFound] = useState([]);
 
