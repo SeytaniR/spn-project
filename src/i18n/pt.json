@@ -1,0 +1,27 @@
+{
+  "UI": {
+    "START_GAME": "Iniciar Caçada",
+    "ROSTER": "Membros do Orfanato",
+    "FAMILY_BUSINESS": "Negócio da Família",
+    "ENGAGEMENT": "Engajamento",
+    "HP": "Vida",
+    "SANITY": "Sanidade",
+    "FOCUS": "Foco"
+  },
+  "CLUE": {
+    "MISSING_HEARTS": "O coração da vítima foi arrancado.",
+    "LUNAR_CYCLE": "Os ataques coincidem com a lua cheia.",
+    "SULFUR": "Há um cheiro forte de enxofre no ar.",
+    "CLAW_MARKS": "Marcas profundas de garras nas paredes."
+  },
+  "ATTRIBUTES": {
+    "strength": "Força",
+    "dexterity": "Destreza",
+    "precision": "Precisão",
+    "intelligence": "Inteligência",
+    "deduction": "Dedução",
+    "knowledge": "Conhecimento",
+    "charisma": "Carisma",
+    "mediumship": "Mediunidade"
+  }
+}

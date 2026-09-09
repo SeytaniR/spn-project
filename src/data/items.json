@@ -1,0 +1,74 @@
+[
+  {
+    "id": "wpn_colt",
+    "name": "O Colt",
+    "type": "WEAPON",
+    "description": "Mata quase qualquer coisa. Munição extremamente rara.",
+    "damageBase": 999,
+    "tags": ["supernatural_gun", "legendary", "bullet"],
+    "charges": 13,
+    "effects": [
+      { "type": "IGNORE_DEFENSE", "value": true }
+    ]
+  },
+  {
+    "id": "wpn_shotgun",
+    "name": "Escopeta de Cano Serrado",
+    "type": "WEAPON",
+    "description": "Arma de fogo padrão para caçadores.",
+    "damageBase": 8,
+    "tags": ["gun", "bullet", "loud"],
+    "charges": -1,
+    "effects": []
+  },
+  {
+    "id": "wpn_revolver",
+    "name": "Revólver .38",
+    "type": "WEAPON",
+    "description": "Confiável e fácil de carregar.",
+    "damageBase": 5,
+    "tags": ["gun", "bullet"],
+    "charges": -1,
+    "effects": []
+  },
+  {
+    "id": "kit_silver_bullets",
+    "name": "Balas de Prata",
+    "type": "KIT",
+    "description": "Projéteis banhados em prata. Essencial contra metamorfos e lobisomens.",
+    "tags": ["silver"],
+    "effects": [
+      { "type": "EXPLOIT_WEAKNESS", "targetTag": "weak_silver", "multiplier": 1.5 }
+    ]
+  },
+  {
+    "id": "kit_holy_water",
+    "name": "Água Benta",
+    "type": "KIT",
+    "description": "Queima demônios como ácido.",
+    "tags": ["holy", "water"],
+    "effects": [
+      { "type": "EXPLOIT_WEAKNESS", "targetTag": "weak_holy", "multiplier": 2.0 }
+    ]
+  },
+  {
+    "id": "rel_anti_possession_tattoo",
+    "name": "Tatuagem Anti-Possessão",
+    "type": "RELIC",
+    "description": "Impede possessão demoníaca no usuário.",
+    "tags": ["warding", "passive"],
+    "effects": [
+      { "type": "IMMUNITY", "targetStatus": "POSSESSED" }
+    ]
+  },
+  {
+    "id": "rel_rabbits_foot",
+    "name": "Pé de Coelho",
+    "type": "RELIC",
+    "description": "Garante sorte suprema, mas ai de você se perdê-lo.",
+    "tags": ["cursed", "luck"],
+    "effects": [
+      { "type": "ADVANTAGE", "targetCheck": "ALL" }
+    ]
+  }
+]

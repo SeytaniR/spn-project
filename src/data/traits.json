@@ -1,0 +1,30 @@
+[
+  {
+    "id": "trait_demon_blood",
+    "name": "Vício em Sangue de Demônio",
+    "type": "SUPERNATURAL",
+    "description": "Ganha poderes telecinéticos, mas entra em abstinência se não consumir.",
+    "effects": [
+      { "type": "UNLOCK_CARD", "cardId": "card_mind_exorcism" },
+      { "type": "PASSIVE_STAT_MODIFIER", "attribute": "mediumship", "value": 3 }
+    ],
+    "mechanics": {
+      "requiresResource": "item_demon_blood",
+      "withdrawalTurns": 2,
+      "withdrawalPenalty": {
+        "hpMaxPercent": -0.5,
+        "engagement": -20
+      }
+    }
+  },
+  {
+    "id": "scar_shattered_knee",
+    "name": "Joelho Estilhaçado",
+    "type": "SCAR",
+    "description": "Uma ferida grave mal curada que limita os movimentos.",
+    "effects": [
+      { "type": "PASSIVE_STAT_MODIFIER", "attribute": "dexterity", "value": -2 }
+    ],
+    "mechanics": null
+  }
+]

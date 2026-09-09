@@ -1,0 +1,46 @@
+[
+  {
+    "id": "char_01",
+    "name": "Liam 'O Novato'",
+    "status": "IDLE",
+    "engagement": 85,
+    "stats": {
+      "hp": { "current": 25, "max": 25 },
+      "focus": { "current": 3, "max": 3 },
+      "sanity": { "current": 100, "max": 100 }
+    },
+    "attributes": {
+      "strength": 5, "dexterity": 6, "precision": 7,
+      "intelligence": 4, "deduction": 5, "knowledge": 3,
+      "charisma": 8, "mediumship": 2
+    },
+    "equipped": {
+      "weapon": "wpn_shotgun",
+      "kit": "kit_silver_bullets",
+      "relic": "rel_anti_possession_tattoo"
+    },
+    "traits": ["scar_shattered_knee"]
+  },
+  {
+    "id": "char_02",
+    "name": "Maya 'A Vidente'",
+    "status": "IDLE",
+    "engagement": 95,
+    "stats": {
+      "hp": { "current": 18, "max": 18 },
+      "focus": { "current": 5, "max": 5 },
+      "sanity": { "current": 80, "max": 100 }
+    },
+    "attributes": {
+      "strength": 2, "dexterity": 4, "precision": 3,
+      "intelligence": 8, "deduction": 8, "knowledge": 9,
+      "charisma": 4, "mediumship": 10
+    },
+    "equipped": {
+      "weapon": "wpn_revolver",
+      "kit": "kit_holy_water",
+      "relic": null
+    },
+    "traits": ["trait_demon_blood"]
+  }
+]

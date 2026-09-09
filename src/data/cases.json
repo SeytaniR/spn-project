@@ -1,0 +1,34 @@
+[
+  {
+    "id": "case_001",
+    "title": "Uivos em Wisconsin",
+    "location": "Madison, WI",
+    "timeLimit": 5,
+    "investigationPoints": 10,
+    "status": "AVAILABLE",
+    "targetMonsterId": "mon_werewolf",
+    "cluesDiscovered": [],
+    "victims": 0,
+    "rewards": {
+      "xp": 300,
+      "reputation": 10,
+      "loot": ["kit_silver_scrap"]
+    }
+  },
+  {
+    "id": "case_002",
+    "title": "Negócio Arriscado",
+    "location": "Reno, NV",
+    "timeLimit": 7,
+    "investigationPoints": 10,
+    "status": "AVAILABLE",
+    "targetMonsterId": "mon_demon_crossroads",
+    "cluesDiscovered": [],
+    "victims": 1,
+    "rewards": {
+      "xp": 500,
+      "reputation": 20,
+      "loot": []
+    }
+  }
+]

@@ -1,0 +1,30 @@
+[
+  {
+    "id": "clue_missing_hearts",
+    "textKey": "CLUE.MISSING_HEARTS",
+    "requiredAttribute": "deduction",
+    "difficulty": 30,
+    "linkedTags": ["beast", "werewolf"]
+  },
+  {
+    "id": "clue_lunar_cycle",
+    "textKey": "CLUE.LUNAR_CYCLE",
+    "requiredAttribute": "knowledge",
+    "difficulty": 10,
+    "linkedTags": ["werewolf", "shapeshifter"]
+  },
+  {
+    "id": "clue_sulfur",
+    "textKey": "CLUE.SULFUR",
+    "requiredAttribute": "mediumship",
+    "difficulty": 20,
+    "linkedTags": ["demon", "hellhound"]
+  },
+  {
+    "id": "clue_claw_marks",
+    "textKey": "CLUE.CLAW_MARKS",
+    "requiredAttribute": "intelligence",
+    "difficulty": 10,
+    "linkedTags": ["beast", "wendigo", "ghoul", "werewolf"]
+  }
+]

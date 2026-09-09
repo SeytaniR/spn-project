@@ -1,0 +1,48 @@
+[
+  {
+    "id": "ally_bobby",
+    "name": "Bobby Singer",
+    "role": "LORE_EXPERT",
+    "bondLevel": 60,
+    "abilities": [
+      {
+        "id": "skill_bobby_research",
+        "name": "Pesquisa na Biblioteca",
+        "bondCost": 15,
+        "effect": "REVEAL_ONE_WEAKNESS"
+      }
+    ],
+    "pendingRequest": {
+      "active": false,
+      "type": "SEND_SUPPLIES",
+      "bondReward": 20,
+      "bondPenalty": -15
+    }
+  },
+  {
+    "id": "ally_castiel",
+    "name": "Castiel",
+    "role": "ANGEL_WARRIOR",
+    "bondLevel": 30,
+    "abilities": [
+      {
+        "id": "skill_cas_smite",
+        "name": "Toque Celestial",
+        "bondCost": 50,
+        "effect": "INSTA_KILL_DEMON"
+      },
+      {
+        "id": "skill_cas_heal",
+        "name": "Cura Milagrosa",
+        "bondCost": 40,
+        "effect": "REVIVE_ORPHAN"
+      }
+    ],
+    "pendingRequest": {
+      "active": false,
+      "type": "HELP_HEAVEN_CIVIL_WAR",
+      "bondReward": 40,
+      "bondPenalty": -30
+    }
+  }
+]

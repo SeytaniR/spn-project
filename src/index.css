@@ -1,0 +1,47 @@
+:root {
+  --bg-dark: #121212;
+  --text-light: #e0e0e0;
+  --accent-red: #8b0000;
+  --accent-gold: #c5a059;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: var(--bg-dark);
+  color: var(--text-light);
+  font-family: 'Courier New', Courier, monospace; /* Trazendo uma vibe diário/investigação */
+  width: 100vw;
+  height: 100vh;
+  overflow-x: hidden;
+  display: flex;
+  justify-content: center;
+}
+
+#root {
+  width: 100%;
+  max-width: 600px; /* Mobile first limit */
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Utilitários fluidos */
+.container {
+  padding: 5%;
+  display: flex;
+  flex-direction: column;
+  gap: 2vh;
+}
+
+.card {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid var(--accent-gold);
+  border-radius: 8px;
+  padding: 5%;
+  width: 100%;
+}

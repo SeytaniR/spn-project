@@ -1,0 +1,27 @@
+{
+  "UI": {
+    "START_GAME": "Start Hunt",
+    "ROSTER": "Orphanage Roster",
+    "FAMILY_BUSINESS": "Family Business",
+    "ENGAGEMENT": "Engagement",
+    "HP": "Health",
+    "SANITY": "Sanity",
+    "FOCUS": "Focus"
+  },
+  "CLUE": {
+    "MISSING_HEARTS": "The victim's heart is missing.",
+    "LUNAR_CYCLE": "Attacks peak during the full moon.",
+    "SULFUR": "There is a strong smell of sulfur in the air.",
+    "CLAW_MARKS": "Deep claw marks on the walls."
+  },
+  "ATTRIBUTES": {
+    "strength": "Strength",
+    "dexterity": "Dexterity",
+    "precision": "Precision",
+    "intelligence": "Intelligence",
+    "deduction": "Deduction",
+    "knowledge": "Knowledge",
+    "charisma": "Charisma",
+    "mediumship": "Mediumship"
+  }
+}

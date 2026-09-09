@@ -1,0 +1,53 @@
+[
+  {
+    "id": "mon_werewolf",
+    "name": "Lobisomem",
+    "tier": "COMMON",
+    "killCountForSpawn": 0,
+    "stats": {
+      "hp": 50,
+      "defense": 8,
+      "evasion": 4,
+      "damage": 12
+    },
+    "tags": ["beast"],
+    "weaknesses": ["weak_silver", "weak_decapitation"],
+    "immunities": ["normal_weapons"],
+    "cluePool": ["clue_missing_hearts", "clue_lunar_cycle", "clue_claw_marks"],
+    "bossMechanic": null
+  },
+  {
+    "id": "mon_werewolf_alpha",
+    "name": "Lobisomem Alfa",
+    "tier": "ALPHA",
+    "killCountForSpawn": 20,
+    "stats": {
+      "hp": 150,
+      "defense": 12,
+      "evasion": 5,
+      "damage": 15
+    },
+    "tags": ["beast", "alpha"],
+    "weaknesses": ["weak_silver", "weak_decapitation"],
+    "immunities": ["normal_weapons", "holy_water"],
+    "cluePool": ["clue_alpha_presence", "clue_missing_hearts", "clue_lunar_cycle"],
+    "bossMechanic": "SUMMON_PACK"
+  },
+  {
+    "id": "mon_demon_crossroads",
+    "name": "Demônio da Encruzilhada",
+    "tier": "BOSS",
+    "killCountForSpawn": 0,
+    "stats": {
+      "hp": 200,
+      "defense": 5,
+      "evasion": 8,
+      "damage": 10
+    },
+    "tags": ["demon", "pact"],
+    "weaknesses": ["weak_holy", "weak_exorcism", "weak_demon_knife"],
+    "immunities": ["normal_weapons", "silver"],
+    "cluePool": ["clue_sulfur", "clue_buried_box", "clue_red_eyes"],
+    "bossMechanic": "OFFER_DEAL"
+  }
+]
